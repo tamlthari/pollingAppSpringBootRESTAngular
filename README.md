@@ -19,6 +19,9 @@ Most devs can easily boot up the app running on React.
 I found an implementation using Angular, which is much leaner, faster, and as pretty as React, in my experience.
 
 Here in my root folder there is no React client, only Angular. So we will dive into setting up the Spring backend and the Angular frontend.
+### But first, let's not forget setting up Database
+1. The database I use is PostGreSQL, so feel free to change datasource configs (url, username, password) and hibernate dialect inside `application.properties` in `src/main/resources`
+2. Run As "Spring Boot Application" and let JPA/myBatis instantiate and persist data as we configured inside our database
 ### Spring JPA + Security + JWT + myBatis
 1. Import the server folder into Eclipse as a Maven existing project, based on the 'pom.xml', all the dependencies will be added automatically.
 2. Choose 'Run as Spring Boot App'
