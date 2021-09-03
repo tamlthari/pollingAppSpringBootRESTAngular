@@ -94,7 +94,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                     .antMatchers(HttpMethod.GET, "/api/polls/**", "/api/users/**")
                         .permitAll()
                     .antMatchers("/api/**", "/swagger-ui.html", "/webjars/**", "/v2/**", "/swagger-resources/**")
-                    	.anonymous()
+                    	.permitAll()//.anonymous()
                     .anyRequest()
                         .authenticated();
 
