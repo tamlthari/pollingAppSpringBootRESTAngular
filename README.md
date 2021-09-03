@@ -20,30 +20,30 @@ I found an implementation using Angular, which is much leaner, faster, and as pr
 
 Here in my root folder there is no React client, only Angular. So we will dive into setting up the Spring backend and the Angular frontend.
 ### But first, let's not forget setting up Database
-1. The database I use is PostGreSQL, so feel free to change datasource configs (url, username, password) and hibernate dialect inside `application.properties` in `src/main/resources`
-2. Run As "Spring Boot Application" and let JPA/myBatis instantiate and persist data as we configured inside our database
+1. The database I use is PostGreSQL, so feel free to change datasource configs (url, username, password) and hibernate dialect inside `src/main/resources/application.properties`
+2. Next we can start importing project into IDE. After we've done that we can run application as "Spring Boot Application" and let JPA/myBatis instantiate and persist data as we configured inside our database
 ### Spring JPA + Security + JWT + myBatis
 1. Import the server folder into Eclipse as a Maven existing project, based on the 'pom.xml', all the dependencies will be added automatically.
-2. Choose 'Run as Spring Boot App'
-3. The application is running at 'localhost:5000'
+2. Choose `Run as Spring Boot App`
+3. The application is running at `localhost:5000`
 ### Angular installation, build, deploy
 1. Installing bootstrap and ngx-bootstrap: `yarn add bootstrap ngx-bootstrap`
 
-Import bootstrap css in src/styles.css:
+  =  Import bootstrap css in src/styles.css:
 
-`@import '~bootstrap/dist/css/bootstrap.min.css';`
+  -  `@import '~bootstrap/dist/css/bootstrap.min.css';`
 
-Installing open iconic: `yarn add open-iconic`
+  =  Installing open iconic: `yarn add open-iconic`
 
-Import icon set in src/styles.css:
+  =  Import icon set in src/styles.css:
 
-`@import '~open-iconic/font/css/open-iconic-bootstrap.min.css';`
+     `@import '~open-iconic/font/css/open-iconic-bootstrap.min.css';`
 
-Install ngx-toastr: `yarn add ngx-toastr`
+  =  Install ngx-toastr: `yarn add ngx-toastr`
 
-Import ngx-toastr css in src/style/css:
+  =  Import ngx-toastr css in src/style/css:
 
-`@import '~ngx-toastr/toastr.css';`
+     `@import '~ngx-toastr/toastr.css';`
 
 2. Configure proxy to talk to backend server:
 
